@@ -1,0 +1,176 @@
+@charset "utf-8";
+
+  .col-md-10 li {
+    padding-top:5px;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    margin: 5px;
+    border: 0;  #eee;      }
+
+#findadd input{
+  width: 45%;
+  height: 20px;
+  border:1px solid #eee;
+}                    
+  
+    .col-md-10 li #findbttn{
+  background-color:rgb(208, 167, 148) ;
+  font-size:12;
+  color:#ffffff;
+  padding: 0px;
+  margin: 0px;
+  height: 23px;
+  font-weight: bold;
+  border: 0px;
+
+}
+
+
+  a {
+    text-decoration: none;
+    color: black;
+                    }
+
+    ul,ol{
+    list-style: none;
+                        }
+#in{
+    font-size: 18px;
+    margin: 15px;
+}   
+
+        /* 폼 전체 박스 */
+        .form-horizontal {
+          float: left;
+            width: auto;
+            margin: auto;
+            padding: 0 10px;
+        }
+
+        /* 입력요소 단위 박스 */
+        .form-group {
+             padding: 15px;
+            border-bottom: 1px dotted #eee;
+
+        }
+
+        /* 마지막 입력 단위의 border 제거 */
+        .form-group:last-child {
+            border-bottom: 0;
+        }
+
+        /* Float 마감제 */
+        .form-group:after {
+            content: '';
+            display: block;
+            clear: both;
+            float: none;
+        }
+
+        /* <label>에 대한 박스 처리 */
+        .col-md-2 {
+            width: 100%;
+            display: block;
+            float: left;
+            font-size: 14px;
+            padding-top: 7px;
+            text-indent: 5px;
+        }
+
+        /* <input>태그가 배치되는 박스의 처리 */
+        .col-md-10 {
+            width: 100%;
+            display: block;
+            float: left;
+        }
+
+        /* <input>태그 */
+        .form-control {
+            width: 100%;
+            padding: 5px 0;
+            font-size: 14px;
+            border: 1px solid #eee;
+        }
+
+        /* 글자 중앙 정렬 */        
+        .text-center {
+            text-align: center;
+        }
+
+        /* 에러 메시지에 대한 글자 색상 */
+        .error {
+            color: red;
+        }
+
+        /* 에러가 발생한 <input>태그 */
+        input.error {
+            background-color: #ffff00;
+        }
+
+        /* 에러메시지가 표시중인 <label>태그 */
+        label.error {
+            font-size: 10px;
+            display: inline-block;
+            padding: 5px 10px;
+            margin: 0;
+        }
+    
+        #add_search{
+            background-color: rgb(208, 167, 148, 0.8);
+            font-size:12;
+            color:#ffffff;
+            width: 30%;
+            height: 25px;
+            border: 0px;
+        }
+
+        /** 이메일 박스*/
+        #email{width: 45%;}
+        #emailD{width: 45%;
+        height: 28px;
+        border: 0.5px solid #eee; }
+       /**주소박스 **/ 
+        #address_box1{
+            width: 60%;
+            margin-bottom: 10px;
+        }
+       /** 회원가입완료 버튼*/
+       #submit{
+         background-color:rgb(208, 167, 148, 0.8);
+            font-size:12;
+            color:#ffffff;
+            width: 80%;
+            height: 40px;
+            border: 0px;
+       }
+       #submit a{
+
+color:#ffffff;
+font-weight: bold;
+}
+#withdrawal {
+    width: 100%;
+    height: 40px;
+     background-color: #eee;
+    color: #111111  ;
+     cursor: pointer;
+     border: 0px;
+}      
+
+  #asher{
+    padding-left: 15px;
+   font-size: 12px;
+   line-height: 1.2px;
+}
+#asher2{
+    padding-left: 15px;
+    font-size: 12px;
+    line-height: 1.2px;}
+
+#input_form .clear {
+    float: none;
+    clear: both;
+    content: '';
+    display: block;
+}

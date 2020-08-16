@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/header.css" />
+    <link rel="stylesheet" type="text/css" href="css/bottom_bar.css" />
+    <link rel="stylesheet" type="text/css" href="css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="css/Login.css" />
+</head>
+
+<body>
+    <!-- 헤더 -->
+    <div id="header">
+        <ul>
+            <li class="back"><a href="javascript:history.back()"><img src="image/back.png"></a></li>
+            <li class="search"><a href="#"><img src="image/search.png"></a></li>
+            <div class="searchbox">
+                <input placeholder="search..." type="text" />
+                <a href=""><img src="image/search.png"></a>
+            </div>
+            <li class="title"><h1>로그인</h1></li>
+            <li class="cart"><a href="ShoppingCart.html"><img src="image/shopping_cart.png"></a></li>
+        </ul>
+    </div>
+
+    <!-- 로그인 정보 입력 -->
+	<div class="content">
+
+    <div class="login_input_area">
+        <form id="loginForm" class="form-inline" method="post" >
+            <input id="user_id" type="text" name="user_id" class="form-control" placeholder="아이디/이메일을 입력하세요." />
+            <br />
+            <input id="user_pw" type="password" name="user_pw" class="form-control" placeholder="비밀번호를 입력하세요." />
+            <!-- 결과를 출력하기 위한 HTML -->
+			<div id="result"></div>
+            <br />
+            <button type="submit" class="btn btn-primary" id="btn">로그인</button>
+        </form>
+
+        <div class="login_checking">
+            <input type="checkbox" id="cb1" name="자동 로그인" />
+            <label id="cb2" for="cb1"><span>자동 로그인</span></label>
+        </div>
+
+        <div class="borderline">
+            <p name="구분선"></p>
+        </div>
+
+        <div class="signup">
+            <a href="SignUp.html">회원가입</a>
+        </div>
+    </div>
+
+    <div id="find_info">
+        <p>아이디/비밀번호를 잊으셨나요?</p>
+        <a href="Find_ID.html"><button id="find_id">아이디 찾기</button></a>
+        <a href="Find_PW.html"><button id="find_pw">비밀번호 찾기</button></a>
+    </div>
+
+	</div>
+
+    <!-- 하단 footer -->
+    <div id="footer">
+            <ul id="first_row">
+                <li>
+                    <a href="#">로그인</a>
+                </li>
+                <li>
+                    <a href="#">고객센터</a>
+                </li>
+                <li>
+                    <a href="#">매장안내</a>
+                </li>
+            </ul>
+            <ul id="second_row">
+                <li>
+                    <a href="#">회원혜택</a>
+                </li>
+                <li>
+                    <a href="#">회사소개</a>
+                </li>
+                <li>
+                    <a href="#">FAMILY SITE</a>
+                </li>
+            </ul>
+            <ul id="last_row">
+                <li>고객센터 1800-3690 &nbsp;&nbsp; | &nbsp;&nbsp; 서울시 강남구 테헤란로 123 &nbsp;&nbsp; | &nbsp;&nbsp; (주)Group Three</li>
+                <li>사업자등록번호 : 123-89-234567</li>
+            </ul>
+            <ul id="address" class="clear">
+                <li>
+                    <address>COPYRIGHT © 2020 SELECTION. ALL RIGHT RESERVED</address>
+                </li>
+            </ul>
+        </div>
+
+
+    <!-- 하단 메뉴바 -->
+    <div id="bottom_bar">
+        <ul>
+            <li><a href="#"><img src="image/menu.png"></a></li>
+            <li><a href="Login.html"><img src="image/lock.png"></a></li>
+            <li><a href="Main.html"><img src="image/home.png"></a></li>
+            <li><a href="MyHeart.html"><img src="image/heart.png"></a></li>
+            <li><a href="Order_List.html"><img src="image/person.png"></a></li>
+        </ul>
+    </div>
+
+    <!-- 카테고리 바 -->
+    <div id="category_bar">
+        <ul>
+            <li><a href="Best.html">BEST</a></li>
+            <li><a href="New.html">NEW</a></li>
+            <li><a href="Recommend.html">RECOMMEND</a></li>
+            <li><a href="Top.html">TOP</a></li>
+            <li><a href="Dress.html">DRESS</a></li>
+            <li><a href="Pants.html">PANTS</a></li>
+            <li><a href="Outer.html">OUTER</a></li>
+            <li><a href="Acc.html">ACCESSORY</a></li>
+            <li><a href="Announcement.html">NOTICE</a></li>
+            <li><a href="QnA.html">Q&A</a></li>
+        </ul>
+    </div>
+
+
+    <!-- 스크립트 영역 -->
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+
+        $(".search").click(function() {
+                $(".title").toggle();
+                $(".searchbox").toggle();
+            });
+
+        $("#bottom_bar li:first-child").click(function(e) {
+            e.preventDefault();
+            $("#category_bar").slideToggle(100);
+        });
+        
+        $("#user_id").focus(function() {
+            $("#user_id").attr("placeholder", "");
+        });
+        
+        $("#user_pw").focus(function() {
+            $("#user_pw").attr("placeholder", "");
+        });
+        
+        $("#user_id").blur(function() {
+            $("#user_id").attr("placeholder", "아이디/이메일을 입력하세요.");
+
+            });
+        
+        $("#user_pw").blur(function() {
+            $("#user_pw").attr("placeholder", "비밀번호를 입력하세요.");
+
+            });
+        
+        /** 로그인 양식 입력 시 **/
+        $("#loginForm").submit(function(e) {
+            // <form>태그가 submit되어 페이지가 이동되는 것을 방지한다.
+            e.preventDefault();
+
+            // 사용자의 입력값을 가져온다.
+            var uid = $("#user_id").val();
+            var pwd = $("#user_pw").val();
+            
+            // 올바른 ID와 PW를 입력 시,
+            if (uid == "ajax" && pwd == "123qwe!@#" ) {
+            	location.href='Main.html'; 
+            } else {
+	            $.ajax( {
+	                url:"../api/post.do",
+	                method: "post",
+	                data: { user_id: uid, user_pw: pwd },
+	                dataType: 'html',
+	                success: function(req) {
+	                    $("#result").html(req);
+	                }     
+	            }); // end $ .ajax
+            } // 틀린 ID와 PW를 입력 
+        }); // end submit
+       
+        
+     	// 3회, 5회 잘못입력 시 오류를 위한 조건문
+     	var counter = 0;
+     	$("#btn").click(function(e) {
+     		counter++;
+
+	     	if (counter == 3) {
+	     		alert ("잘못된 아이디 또는 비밀번호를 3회 입력하셨습니다. 5회이상 입력시 로그인은 제한됩니다.")
+	     	} else if (counter == 5) {
+	     		alert ("잘못된 아이디 또는 비밀번호를 5회 입력하셨습니다. 비밀번호 찾기 페이지로 이동합니다.")
+	     		location.href='Find_PW.html'; 
+	     	}
+     	});
+    });
+    </script>
+    </body>
+</html>

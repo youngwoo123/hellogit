@@ -1,0 +1,275 @@
+@charset "utf-8";
+
+    /* common */
+
+    html body {
+
+    }
+
+    a {
+    text-decoration: none;
+    color: black;
+}
+
+.page {
+   /* width: 100% */
+     height: 100%;
+    text-align: center;
+}
+
+
+#menu_bar li {
+    float: left;
+    width: 12.5%;
+    line-height: 50px;
+}
+
+#container a {
+    display: block;
+    width: 100%;
+    height: 100%
+}
+
+#container a img {
+    width: 80%;
+    height: 75%;
+    opacity: 1;
+    z-index: 9;
+}
+
+li.logo {
+    line-height: 50px;
+    letter-spacing: 2px;
+    padding-right: 10px;
+}
+    fieldset {
+        padding-right: 10px;
+    }
+
+    #container {
+        padding: 0 15px;
+    }
+
+
+    /* 체크박스 */
+        .input_group {
+            border-bottom: 1px solid #ccc;
+            font-size: 1em/40px '돋움', 'Helvetica';
+        }
+
+        .back .back2 {
+            float: left;
+        }
+
+    /* 사진 상품명 가격 */
+        .product {
+            height: 100px;
+            width: 100px;
+            padding-left: 10px;
+            float: left;
+        }
+    /* 아이콘 */
+        .product2 {
+            background-color: white;
+            display: inline-block;
+            float: right;
+            width: 20px;
+            height: 20px;
+
+        }
+    /* 옵션 수량 색상 사이즈 갯수 */
+        .product3 {
+            font-size: 12px;
+            margin-right: 10px;
+            width: 26%;
+            display: inline-block;
+            padding-top: 5px;
+            padding-left: 10px;
+
+        }
+
+        .product4 {
+            float: left;
+        }
+
+        .btn {
+            width: auto;
+            padding: 0 20px;
+            background-color:#E46764;
+        }
+
+        .don .tit, .don .con {
+            vertical-align: middle;
+        }
+    /* 선택상품 주문하기 */
+
+        .btn2 {
+            margin-top: 10px;
+            height: 40px;
+        }
+
+        .btn2 .chor {
+            display: block;
+            text-align: center;
+            background: rgb(208, 167, 147);
+            height: 40px;
+            width: 100%;
+            line-height: 40px;
+            font-size: 14px;
+            color: #fff;
+        }
+
+        /* 품절상품 선택상품 삭제 버튼 */
+        .btn3 {
+            padding-top: 10px;
+            text-align: center;
+            margin: auto;
+            border: none;
+
+        }
+
+
+        .btn3 button {
+            width: calc(50% - 2.5px);
+            height: 40px;
+            box-sizing: border-box;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            padding: 8px 15px;
+            background-color: #fff;
+            color: #222222;
+        }
+
+        .allall:after {
+            display: block;
+            clear: both;
+            content="";
+         }
+
+       .allpro{
+            display: inline;
+            border: 1px solid #f1f1f1;
+            font-size: 14px;
+        }
+
+        .allpro span {
+            color: #888888;
+        }
+
+        .dduct1 {
+            float: right;
+        }
+
+                .dduct2 {
+            float: right;
+        }
+
+                .dduct3 {
+            float: right;
+        }
+
+
+
+
+
+
+
+        .don>li {
+           display: inline-block;
+        }
+        .borderbtn.on {
+            background: url(../image/au.png) no-repeat 80% 50%;
+        }
+        .borderbtn {
+            margin-left: 30px;
+            background: url(../image/ad.png) no-repeat 80% 50%;
+            background-size: 12px;
+            border: 1px solid gray;
+        }
+
+        #fbtn{
+
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        }
+
+        #fbtn .btn {
+            float: left;
+            width: 50%;
+            line-height: 50px;
+            text-align: center;
+            height: 100%;
+            border: none;
+        }
+
+        div button {
+            margin-left: px;
+            padding: 5px 20px;
+
+        }
+
+        div button p {
+            padding: 1px;
+        }
+
+        .collapse {
+            width: 100%;
+            margin: auto;
+        }
+
+        .collapse-title a {
+            display: block;
+            width: auto;
+            padding: 10px;
+            color: #222;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        .content {
+            padding: 10px 15px;
+            font-size: 12px;
+            background-color: #eee;
+            display: none;
+
+        }
+
+        .con {
+            font: 14px;
+            color: gray;
+
+        }
+
+        input[disabled] {
+            background-color: rgb(206, 204, 206);
+        }
+
+        .line {
+        margin-bottom:20px;
+        }
+
+        .color_c {
+        border-radius: 100%;
+        width: 20px;
+        margin-left: 20px;
+        }
+
+        .size_c {
+            margin-left: 8px;
+
+        }
+
+        .num_c{
+            margin-left: 20px;
+
+        }
+
+        #size1 {
+
+        }
+
+
+

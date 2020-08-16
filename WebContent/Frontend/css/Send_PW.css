@@ -1,0 +1,44 @@
+@charset "utf-8";
+/**  상단 메세지 영역 **/
+.msg {
+    padding: 30px 15px 15px;
+}
+.msg p {
+    line-height: 25px;
+}
+
+/** 중간 이메일, 발급시간 제시 영역 **/
+.my_Email {
+    padding: 15px;
+    background-color: rgba(206, 204, 206, 0.8);
+    text-align: center;
+    height: 130px;
+}
+
+.my_Email p {
+    line-height: 25px;
+}
+
+.my_Email p:first-child {
+    padding-top: 40px;
+}
+
+.my_Email span {
+    color: #03a9f4;
+}
+
+/** 하단 메세지 영역 **/
+.msg_etc {
+    padding: 10px 15px 15px;
+    font-size: 14px;
+    line-height: 20px;
+    word-break: keep-all;
+}
+
+.msg_etc ul li {
+    padding: 10px 0;
+}
+
+.msg_etc span {
+    color: #03a9f4;
+}

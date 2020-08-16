@@ -1,0 +1,68 @@
+@charset "utf-8";
+/**  전체 영역 여백 **/
+.content {
+    margin-bottom: 30px;
+}
+
+/** 상단 사진 **/
+.image {
+    background: url(../image/find_ID.png) no-repeat center;
+    background-size: 100% 100%;
+    height: 205px;
+    text-align: left;
+}
+
+h2 {
+    padding-top: 100px;
+    padding-left: 30px;
+    font-size: 22px;
+    color: #222222;
+}
+
+/** 중간 문장 **/
+.certification {
+    margin: 0 15px;
+}
+
+.choice p {
+    text-align: center;
+    margin: 40px 0 20px;
+}
+
+/** 이메일, 아이핀으로 찾기 버튼 **/
+.choice li {
+    display: block;
+    float: left;
+    width: calc(50% - 7px);
+    margin:auto;
+    border: 1px solid #CECCCE;
+}
+
+#ipin {
+    margin-left:10px;
+}
+
+.choice li img {
+    display: block;
+    margin:auto;
+    margin-top: 20px;
+}
+
+.choice li button {
+    display: block;
+    margin: 10px auto;
+    height: 40px;
+    color: #FFF;
+    font-weight: bold;
+    background-color: #D0A793;
+    font-size: 14px;
+    border:none;
+    width: 120px;
+    outline: none;
+}
+
+.content:after {
+    display: block;
+    clear: both;
+    content: "";
+}

@@ -1,0 +1,115 @@
+@charset "utf-8";
+#event{
+   
+    margin-bottom:10px;
+    background-color: #ece2db ;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+}
+
+
+/* 기본 여백 제거 */
+* { margin: 0; padding: 0; }
+
+/* 전체 박스 크기 및 정렬 */
+.collapse { width: 100%; margin: auto; }
+
+/* 제목 영역의 배경색상과 테두리 */
+.collapse-title { background:#eee; border: 1px solid #d5d5d5; }
+
+/* 제목영역의 링크에 대한 크기, 글자모양 */
+.collapse-title a {
+    display: block;
+    width: auto;
+    padding: 15px;
+    color: #222;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/* 내용영역의 여백, 글자크기, 테두리, 숨김 */
+.content {
+    padding: 15px 15px;
+    font-size: 12px;
+    border-left: 1px solid #d5d5d5;
+    border-right: 1px solid #d5d5d5;
+    display: none;
+    background-color: #fff;
+    line-height: 14px;
+}
+
+/* 마지막 내용 박스의 테두리 보정 */
+.content:last-child { border-bottom: 1px solid #d5d5d5; }
+
+#content1 {
+    display: block;
+}
+
+
+/*[공지] */
+   .high {
+    font-size: 14px;
+    color: #f00;
+}
+
+#date {
+    font-size: 12px;
+    padding-top: 10px;
+    padding-bottom: 3px;
+}
+
+#line.ann {
+    font-size: 16px;
+    padding-bottom: 10px;
+    padding-left:10px;
+	margin-bottom: 10px;
+
+}
+
+#line {
+	width: 100%;
+	border-bottom: 2px solid #7F7D7E;
+}
+
+.section_bottom_bar {
+	background-color:rgba(206, 204, 206, 0.8);
+	width: 100%;
+	height: auto;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 20px;
+    margin-bottom: 3px;
+    line-height: 1.4;
+}
+
+#cust{
+	font-size: 14px;
+}
+
+#tel{
+	font-size: 20px;
+}
+
+#hour{
+	font-size: 14px;
+}
+
+.hs_paging.bottom {
+    padding: 30px 0;
+}
+.hs_paging {
+    text-align: center;
+
+}
+.hs_paging a {
+    font-size: 14px;
+    color: #111;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    overflow: hidden;
+    line-height: 31px;
+    text-align: center;
+    cursor: pointer;}

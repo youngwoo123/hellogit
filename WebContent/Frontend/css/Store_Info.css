@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+#content {
+            text-align: center;
+            list-style: none;
+         }
+
+        .address{
+            background-color: #FBF9ED;
+            height: 105px;
+        }
+
+    #content .address{
+    font-size: 12px;
+    border: 2px 0px  solid  ;
+    }
+
+    #content .address hr:first-child {
+        margin-top:0px;
+    }
+     #content .address hr:last-child {
+        margin-bottom:0px;
+    }
+    #content #map{
+    padding-left:10%;
+    border:15px solid #E6E8E5;
+    box-sizing: border-box;
+    }

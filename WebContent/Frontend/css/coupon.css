@@ -1,0 +1,150 @@
+@charset "utf-8";
+
+body{
+    line-height: 1.6;
+    background-color: white;
+}
+
+/**헤더 수정 이거 변경해야함*/
+#header {
+    margin-top: 10px;
+    height:35px;
+}
+
+hr  {
+    margin: 0;
+
+}
+
+.bottom1 {
+    padding:25px 15px 60px;
+    font-size:13px;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.tabs {
+    font-weight: bold;
+}
+
+
+ul.tabs{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-align: center;
+    background-color: #ededed;
+}
+ul.tabs li{
+    background: none;
+    color: #222;
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 5px;
+    font-weight: lighter;
+
+}
+
+.tab-link.tab-link:hover {
+    color: red;
+    font-weight: bolder;
+}
+
+ul.tabs li.current:focus{
+    background: #ededed;
+    color: #222;
+
+
+}
+
+#tab-1 {
+
+}
+
+.coupon_image {
+    background-color: gray;
+    background: url(../image/coupon.png);
+        background-repeat: no-repeat;
+    text-align: center;
+    background-size: 100%  100%;
+    padding-bottom: 20px;
+    margin-right: 10px;
+}
+
+
+.coupon_p {
+    font-size: 13px;
+    margin-bottom: 10px;
+    padding:10px 20px;
+    margin-right: 30px;
+    padding-top: 25px;
+}
+
+.coupon_title {
+    font-size: 25px;
+    margin-bottom: 8px;
+    margin-top: 0;
+    line-height: 1;
+    font-weight: bold;
+    margin-right: 30px;
+
+}
+
+.coupon_day {
+    font-size: 13px;
+    line-height: 1;
+    margin-bottom: 15px;
+    margin-right: 30px;
+}
+
+.coupon_num {
+    text-align: center;
+    line-height: 25px;
+    border-radius: 12px;
+    border: 1px solid #e46764;
+    color: #e46764;
+    font-size: 14px;
+    width: 65%;
+    margin-left: 12%;
+
+}
+
+.coupon_logo {
+
+}
+
+
+#tab-2 {
+    background-repeat: no-repeat;
+    text-align: center;
+    background-size: 100% 60%;
+}
+
+
+.tab-content{
+    display: none;
+    background: #ededed;
+    height: 250px;
+    width: 100%;
+
+}
+
+
+
+.tab-content.current{
+    display: inherit;
+}
+
+.coupon_desc {
+
+}
+
+#li:active {
+    font-weight: 20px;
+
+}
+/** 마이하트 */
+
+/** service */

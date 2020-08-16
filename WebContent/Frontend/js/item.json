@@ -1,0 +1,10 @@
+{
+    "item" : [
+        {"img": "image/11.jpg", "brand": "O`2nd", "desc": "프린팅 패널 탑", "price": 298000},
+        {"img": "image/3.png", "brand": "OBZEE", "desc": "실크 블렌드 스티치 점퍼", "price": 595000},
+        {"img": "image/4.png", "brand": "O`2nd", "desc": "더블 버튼 재킷", "price": 398000},
+        {"img": "image/5.png", "brand": "LÄTT", "desc": "글리터 자카드 니트 스커트", "price": 375000},
+        {"img": "image/6.jpg", "brand": "TIME", "desc": "레이스 블록 레이스업 탑", "price": 595000},
+        {"img": "image/10.jpg", "brand": "CLUB MONACO", "desc": "드레이프 셔츠 드레스", "price": 438000}
+    ]
+}

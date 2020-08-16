@@ -1,0 +1,442 @@
+@charset "utf-8";
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* 기간 검색 */
+#search_wrap {
+    background-color: rgb(236, 226, 219);
+    text-align: center;
+    padding: 15px 15px;
+    box-sizing: border-box;
+}
+
+#search2 ul.search2 {
+    line-height: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 14px;
+}
+
+#search2 .search2 li {
+    width: 25%;
+    float: left;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#search2 .search2 li:last-child {
+    border-right: none;
+}
+
+#date {
+    margin-top: 10px;
+    display: none;
+}
+
+#date ul.date {
+    width: calc(100% - 65px);
+}
+
+#date ul li {
+    box-sizing: border-box;
+    float: left;
+    height: 40px;
+}
+
+#date ul li.cal {
+    width: calc(50% - 7.5px);
+}
+
+#date ul li.cal input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-family: "맑은고딕";
+    padding-left: 3px;
+}
+
+#date ul .blank {
+    width: 15px;
+    line-height: 40px;
+}
+
+#date span {
+    display: inline-block;
+    width: 60px;
+    margin-left: 5px;
+    background-color: #fff;
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: center;
+    padding-right: 2px;
+}
+
+/* 본문 */
+
+/*#text_area {
+    height: 171px;
+    text-align: center;
+    line-height: 171px;
+    color: #222222;
+}
+
+#blank_area {
+    height: 40px;
+}*/
+
+#order_list_wrap .order_box {
+    padding: 0 15px 5px 15px;
+    box-sizing: border-box;
+    border-bottom: 8px solid rgb(236, 226, 219);
+}
+
+#order_list_wrap .order_box .truck {
+    background-color: #fff;
+    height: 37px;
+    padding: 15px 40px;
+    position: relative;
+    line-height: 21px;
+    background: url("../image/truck.png") no-repeat 0 16.5px;
+}
+
+#order_list_wrap .order_box .pickup {
+    background-color: #fff;
+    height: 37px;
+    padding: 15px 40px;
+    position: relative;
+    line-height: 21px;
+    background: url("../image/pickup.png") no-repeat 1px 18px;
+}
+
+#cancel_box {
+    background-color: #ccc;
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    right: 10px;
+    top: 28px;
+}
+
+#cancel_box img {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+#order_list_wrap .order_box .order_item_ul > li {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    border-top: 1px solid #f1f1f1;
+}
+
+#order_list_wrap .order_box .order_item_ul .order_item_img {
+    float: left;
+    width: 25%;
+    padding-right: 10px;
+}
+
+#order_list_wrap .order_box .order_item_ul .order_item_content:after {
+    content: ""; display:block; clear: both;
+}
+
+#order_list_wrap .order_box .order_item_ul .order_item_content ul {
+    float: left;
+}
+
+#order_list_wrap .order_box .order_item_ul .order_item_content span {
+    font-size: 14px;
+    color: #666;
+}
+
+#order_list_wrap .order_box .order_item_ul .order_item_content .item_name {
+    font-weight: bold;
+}
+
+#order_list_wrap .order_box .order_item_ul .order_item_content .first {
+    padding-bottom: 5px;
+}
+
+#order_list_wrap .order_box .order_item_ul .order_item_content .second {
+    padding-bottom: 15px;
+}
+
+#order_list_wrap .order_box .order_item_ul .order_item_content .third {
+    padding-bottom: 30px;
+}
+
+#order_list_wrap .order_box .order_item_ul .order_item_content .fourth span {
+    font-size: 13px;
+}
+
+#order_list_wrap .order_box .order_item_ul .order_item_content .fourth span.stage {
+    color: #E46764;
+}
+
+
+#order_list_wrap .order_box .order_item_ul .order_item_img img {
+    width: 100%;
+}
+
+#order_list_wrap .order_box .order_info .deliv_method {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#order_list_wrap .order_box .order_info .deliv_sub {
+    font-size: 13px;
+    color: #666;
+}
+
+#order_list_wrap .order_box .order_info .menu_vertical > img {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}
+
+/* 주문배송조회 안내 */
+
+#info {
+    height: 180px;
+
+    padding: 50px 15px 25px 15px;
+    color: rgb(127, 125, 126);
+}
+
+#info ul {
+    margin-top: 27px;
+    font-size: 13px;
+}
+
+#info ul li {
+    margin-top: 12px;
+    letter-spacing: 0;
+}
+
+
+/* 주문취소창 모달 */
+
+#modal {
+  width: 100%;
+  height: 100%;
+  transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
+  top: 100%;
+  position: fixed;
+  left: 0;
+  background-color: #fff;
+}
+
+#modal.open {
+    top: 0;
+}
+
+/* 모달창 헤더 */
+#header {
+    height: 45px;
+}
+
+#header ul {
+    text-align: center;
+}
+
+li.title {
+    font-size: 16px;
+    height: 45px;
+    outline: none;
+}
+
+li.title h1 {
+    padding-top: 16px;
+    color: #222222;
+    letter-spacing: 0;
+}
+
+#header ul li.close_btn img {
+    position: absolute;
+    top: 14px;
+    right: 8px;
+    width: 15px;
+    height: 15px;
+
+    cursor: pointer;
+}
+
+#cancel_info_box {
+    background-color: rgb(236, 226, 219);
+    width: 100%;
+    height: 70px;
+    padding: 20px 15px 0 15px;
+    text-align: center;
+    box-sizing: border-box;
+    vertical-align: center;
+}
+
+#cancel_order_num {
+    font-size: 14px;
+    color: #222222;
+    margin-bottom: 5px;
+}
+
+#cancel_order_date {
+    font-size: 13px;
+    color: #666666;
+    letter-spacing: -0.5px;
+}
+
+
+/* 모달창 환불예상 내역 */
+#refund_box {
+    padding: 25px 15px;
+    border-bottom: 8px solid rgb(236, 226, 219);
+}
+
+#refund_box li:first-child {
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #666666;
+    font-size: 15px;
+}
+
+#refund_box li:last-child {
+    font-size: 14px;
+    color: #666666;
+}
+
+#refund_info_box {
+    padding: 20px 15px;
+}
+
+#refund_info_box_inner_box {
+    border: 1px solid #e1e1e1;
+    padding: 15px 15px;
+    box-sizing: border-box;
+}
+
+#refund_info_box_inner_box .title {
+    position: relative;
+    line-height: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #666666;
+
+}
+#refund_info_box_inner_box .title img {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: -5px;
+    right: -7px;
+    cursor: pointer;
+}
+
+#refund_info_box_inner_box .content {
+    font-size: 13px;
+    margin-top: 20px;
+    color: #666666;
+    display: none;
+}
+
+#refund_info_box_inner_box .content h5 {
+    margin-bottom: 10px;
+}
+
+#refund_info_box_inner_box .content ul {
+    padding-left: 13px;
+    list-style: disc;
+    letter-spacing: -0.5px;
+}
+
+#refund_info_box_inner_box .content li {
+    margin-bottom: 10px;
+}
+
+
+/* 모달창 주문취소 버튼 */
+#cancel_button_final {
+    height: 50px;
+    padding: 15px;
+}
+
+#cancel_button_final span {
+    display: block;
+    text-align: center;
+    height: 40px;
+    background-color: rgb(208, 167, 147);
+    line-height: 40px;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* 모달창 팝업 */
+#pop_container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.3);
+    display: none;
+}
+
+#pop {
+    position: fixed;
+    top: 200px;
+    background: #fff;
+    width: calc(100% - 30px);
+    margin-left: 15px;
+    height: 200px;
+    font-size: 14px;
+    text-align: center;
+    box-sizing: border-box;
+    display: none;
+}
+
+#pop img {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    cursor: pointer;
+    width: 13px;
+    height: 13px;
+}
+
+#pop span {
+    display: block;
+    letter-spacing: -1px;
+}
+
+#pop span:first-child {
+    font-size: 16px;
+    padding-top: 80px;
+    margin-bottom: 50px;
+    color: #444444;
+}
+
+#pop span:last-child {
+    width: calc(100% - 30px);
+    height: 40px;
+    background-color: rgb(208, 167, 147);
+    margin: auto;
+    color: #fff;
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+}
+

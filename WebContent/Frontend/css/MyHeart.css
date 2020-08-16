@@ -1,0 +1,227 @@
+/* 링크 초기화 */
+a {
+    text-decoration: none;
+    color: black;
+}
+/*
+* { margin: 0; padding: 0; box-sizing: border-box; }*/
+
+body, html { width: 100%!important; height: 100%; }
+
+.clear:after { content: ''; display: block; clear: both; visibility: hidden; }
+
+.container { padding-top: 50px; margin: 0; padding: 0; box-sizing: border-box; }
+
+
+.page-header {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    background-color: rgb(236, 226, 219);
+}
+.page-header ul li {
+    margin: 6px 0;
+    font-size: 13px;
+}
+.page-header ul li:last-child{
+    margin:0px;
+
+}
+
+
+.two_option { margin: 20px; }
+.two_option div { float: left; width: 50%; }
+.two_option .select {
+    text-align: right;
+     }
+.two_option .select select {
+    border: none;
+    background-color: #fff
+     }
+
+.list ul li {
+    width: 50%;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+
+     }
+
+.list ul li .img_box img {
+     position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.box_list input[type="checkbox"]  {
+
+    top:px;
+    display: none;
+}
+
+.box_list input[type="checkbox"] + label {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url(../image/notchecked_checkbox.png) center;
+    cursor: pointer;/*
+    float: left;*/
+    position: absolute;
+}
+
+.box_list:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.box_list input[type="checkbox"]:checked + label {
+    background: url(../image/checked_checkbox.png) no-repeat center;/*
+    float: left;*/
+    width: 15px;
+    height: 15px;
+}
+
+.box_list input[type="checkbox"] + label span {
+    position:absolute;
+    top: 1000px;
+    left: 30px;
+    display: block;
+    color: #666;
+}
+
+
+.list ul li p {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.paging {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.paging li {
+    display: inline;
+}
+
+.paging li:nth-child(2) {
+    text-decoration: underline;
+}
+
+.btn_basket {
+    position: fixed;
+    bottom: 55px;
+    left: 0;
+    width: 100%;
+    background: rgba(208, 167, 147, 1);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    box-shadow: none;
+    border: none;
+}
+
+#modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    z-index: 9999;
+    transition: bottom 0.5s;
+}
+#modal.show {
+    bottom: 0;
+}
+
+#modal #modal_bg {
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0,0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#modal #options {
+    width: 100%;
+    height: 100%;
+}
+
+#modal #options .wrapper {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+#modal #options .btn_close {
+    padding: 5px;
+    font-size: 20px;
+    color: #fff;
+    text-align: right;
+}
+
+#modal #options .box {
+    background: #fff;
+    padding: 20px;
+}
+
+#modal #options .box .img_box {
+    float: left;
+    width: 30%;
+}
+
+#modal #options .box .img_box img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#modal #options .box .cont_box {
+    padding-top: 20px;
+    float: left;
+    width: 65%;
+    padding-left: 10px;
+    text-align: center;
+    line-height: 23px;
+}
+
+#modal #options .btn_box input {
+    width: 100%;
+    background: #E46764 ;
+    color: #fff;
+    padding: 10px 0;
+    border: 0px
+}
+
+#modal #go_basket {
+    width: 90%;
+    padding: 0px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    z-index: 3;
+    display: none;
+}
+
+#modal #go_basket .btn_close {
+    text-align: right;
+    padding: 5px;
+}
+
+#modal #go_basket p {
+    text-align: center;
+    height: 45px;
+}
+
+#modal #go_basket input {
+    width: 100%;
+    background: #E46764;
+    color: #fff; border:0px;
+    padding: 10px;
+}

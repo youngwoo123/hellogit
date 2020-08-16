@@ -1,0 +1,58 @@
+@charset "utf-8";
+/**  상단 메세지 영역 **/
+.msg {
+    padding: 30px 15px 15px;
+}
+.msg p {
+    line-height: 25px;
+}
+
+/** 중간 아이디 제시 영역 **/
+.my_ID {
+    padding: 15px;
+    background-color: rgba(206, 204, 206, 0.8);
+    text-align: center;
+    height: 130px;
+}
+
+.my_ID p {
+    line-height: 25px;
+}
+
+.my_ID p:first-child {
+    padding-top: 40px;
+}
+
+.my_ID span {
+    color: #03a9f4;
+}
+
+/** 하단 로그인하기, 비밀번호찾기 버튼 **/
+.bttn {
+    padding:0 15px;
+    margin-top: 30px;
+    margin-bottom: 55px;
+    display: block;
+    padding-bottom: 15px;
+}
+
+.bttn button {
+    float: left;
+    width: calc(50% - 2.5px);
+    height: 40px;
+    background-color: #D0A793;
+    border: none;
+    outline: none;
+}
+
+#find_pw {
+    margin-left: 5px;
+}
+
+.bttn a button {
+    color: #fff;
+    font-weight: bold;
+}
+
+
+

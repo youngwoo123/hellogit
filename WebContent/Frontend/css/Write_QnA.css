@@ -1,0 +1,59 @@
+@charset "utf-8";
+.container{
+		background-color: rgb(236, 226, 219);
+    	}
+
+	.form-horizontal{
+		padding-top: 30px;
+		margin-left: 3%;
+	}
+
+    .form-group{
+    	color: #7F7D7E;
+    	margin-bottom: 15px;
+    
+    }	
+
+    #subject{
+    	margin-top: 15px;
+    	width: 93%;
+    	height: 40px;
+    }
+   	
+
+   	#content.form-control{
+   margin-top: 15px;
+   		width: 93%;
+   		height: 200px;
+   	}
+
+#title{
+  color: #111111;
+  font-weight: bold;
+}
+	
+#sent{
+  color: #111111;
+  font-weight: bold;
+}
+
+#btn-block{
+		text-align: center;
+		width: 47%;
+		height: 35px;
+		background-color: #D0A793;
+		border-width: 0px;
+		margin-top: 10px;
+    color: #fff;
+	}
+
+
+  #cancle{
+    color: #fff;
+    font-weight: bold;
+  }
+
+  #submit{
+    color: #fff;
+    font-weight: bold;
+  }

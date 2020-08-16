@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+hr {
+    border: 3px solid #eee;
+}
+
+h2 {
+    font-size: 10px;
+}
+
+/* 사진 이미지 */
+.product img {
+
+    width: 80px;
+    height: 75px;
+    opacity: 1;
+    z-index: 9;
+}
+
+/*배송결제정보 글자*/
+.logo {
+    padding-top: 16px;
+}
+
+/* 상품설명 float 왼쪽으로 */
+.product {
+    float: left;
+    padding-right: 10px;
+}
+
+/** container 안에 padding 15px */
+#container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* 쿠폰 관련 */
+.ccp {
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+select {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #999;
+    font-family: inherit;
+    background: url('arrow.jpg') no-repeat 95% 50%;
+    border-radius: 0px;
+}
+
+.pay {
+    text-align: center;
+}
+
+.button {
+    background-color: gray;
+    border: none;
+    color: #222222;
+    padding: 15px 8px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    margin:10px 4px;
+    width: 25%;
+    height: auto;
+}
+
+
+/* 쇼핑계속하기 버튼 */
+.btn2 {
+    background-color: gray;
+    margin: 15px 15px;
+    width: auto;
+    text-align: center;
+    height: 30px;
+    padding-top: 13px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+}
+
+.payall {
+    background-color: gray;
+    height: 35px;
+    width: auto;
+    padding-top: 20px;
+}
+
+.btn_t_1 {
+    left: 15px;
+    top: 0;
+    padding-right: 15px;
+    padding-left: 15px;
+
+}
+
+.btn_t_2 {
+    float: right;
+    top: 0;
+    padding-right: 15px;
+    padding-left: 15px;
+
+}
+
+.story {
+    margin-top: 10px;
+    width: 50%;
+    display: inline-block;
+    padding-left:10px;
+
+
+}
+
+.money {
+    width: 40%;
+    text-align: right;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+

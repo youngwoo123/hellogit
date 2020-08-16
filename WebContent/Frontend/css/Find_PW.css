@@ -1,0 +1,67 @@
+@charset "utf-8";
+/**  전체 영역 여백 **/
+.content {
+    margin-bottom: 30px;
+}
+
+/** 상단 사진 **/
+.image {
+    background: url(../image/find_info.png) no-repeat center;
+    background-size: 100% 100%;
+    height: 205px;
+    text-align: left;
+}
+
+h2 {
+    padding-top: 100px;
+    padding-left: 30px;
+    font-size: 22px;
+    color: #222222;
+}
+
+/**  이메일 입력 창 **/
+.content2 {
+    padding: 15px;
+    text-align: center;
+}
+
+.input_ID p {
+    padding: 20px 0;
+    font-size: 15px;
+}
+
+.input_ID ul {
+    padding: 0 10px;
+}
+
+.input_ID ul li input {
+    width: calc(100% - 16px);
+    height: 40px;
+    border: 1px solid #CECCCE;
+    padding-left: 10px;
+    outline: none;
+}
+
+input::-webkit-input-placeholder {
+  color: #CECCCE;
+}
+
+input:-ms-input-placeholder {
+  color: #CECCCE;
+}
+
+/** 버튼 **/
+.nxt_bttn button {
+    width: calc(50% - 12px);
+    height: 40px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #D0A793;
+    border: none;
+    margin: 20px 0 5px 0 ;
+    outline: none;
+}
+
+
+
+

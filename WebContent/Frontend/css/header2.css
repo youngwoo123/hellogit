@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* 헤더 */
+#header {
+    height: 45px;
+}
+
+#header ul {
+    text-align: center;
+}
+
+li.back {
+    position: absolute;
+    top: 1px;
+    left: 3px;
+    width: 45px;
+    height: 45px;
+}
+
+li.back a {
+    display: block;
+    width: 23px;
+    height: 40px;
+}
+
+li.back img {
+    width: 18px;
+    height: 16px;
+    padding: 12.6px 5px;
+}
+
+li.home {
+    position: absolute;
+    top: 1px;
+    left: 32px;
+    width: 45px;
+    height: 45px;
+}
+
+li.home a {
+    display: block;
+    width: 23px;
+    height: 40px;
+}
+
+li.home img {
+    width: 20px;
+    height: 20px;
+    padding: 10px 5px;
+}
+
+li.title {
+    font-size: 16px;
+    height: 45px;
+    outline: none;
+}
+
+li.title h1 {
+    padding-top: 16px;
+    color: #222222;
+    letter-spacing: 0;
+}
+
+li.search {
+    position: absolute;
+    top: 2px;
+    right: 15px;
+    width: 45px;
+    height: 45px;
+}
+
+li.search a {
+    display: block;
+    width: 22px;
+    height: 40px;
+}
+
+li.search img {
+    width: 20px;
+    height: 20px;
+    padding-top: 11px;
+}
+
+li.cart {
+    position: absolute;
+    top: 3.5px;
+    right: 0;
+    width: 45px;
+    height: 45px;
+}
+
+li.cart a {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30px;
+    height: 40px;
+}
+
+li.cart img {
+    padding-top: 7px;
+    width: 23px;
+    height: 23px;
+}
+
+
+.searchbox {
+    padding-top: 5.5px;
+    display: none;
+
+}
+
+.searchbox input {
+        width: 50%;
+        height: 30px;
+        border: 1px solid #EEE;
+        border-radius: 10px;
+        background-color: #fff;
+        padding-left: 10px;
+        outline: none;
+}
+
+.searchbox input, img {
+        vertical-align: middle;
+}
+
+.searchbox img {
+        width: 17px;
+        height: 17px;
+        margin-left: -30px;
+}

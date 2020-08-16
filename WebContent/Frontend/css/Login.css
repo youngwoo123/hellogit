@@ -1,0 +1,117 @@
+@charset "utf-8";
+/** 로그인 창 **/
+.login_input_area {
+    padding: 35px 15px 0 15px;
+}
+
+#user_id, #user_pw {
+    display: block;
+    height: 40px;
+    margin: auto;
+    width: calc(100% - 14px);
+    border: 1px solid #CECCCE;
+    padding-left: 10px;
+    color: #222;
+    outline: none;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    height: 40px;
+    color: #FFF;
+    font-weight: bold;
+    background-color: #D0A793;
+    font-size: 14px;
+    border:none;
+    margin-top: 15px;
+    outline: none;
+}
+
+#user_pw {
+	margin-bottom: 10px;
+}
+
+/** 체크박스 **/
+.login_checking {
+    display: block;
+    position: relative;
+    margin-top: 20px;
+}
+
+.login_checking input[type="checkbox"]  {
+    display: none;
+}
+
+.login_checking input[type="checkbox"] + label {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url(../image/notchecked_checkbox.png) center;
+    cursor: pointer;
+    float: left;
+}
+
+.login_checking:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.login_checking input[type="checkbox"]:checked + label {
+    background: url(../image/checked_checkbox.png) no-repeat center;
+    float: left;
+    width: 25px;
+    height: 25px;
+}
+
+.login_checking input[type="checkbox"] + label span {
+    position:absolute;
+    top: 4px;
+    left: 30px;
+    display: block;
+    color: #666;
+}
+
+/** 구분선, 회원가입 버튼 **/
+.borderline p {
+    width: 100%;
+    height: 10px;
+    margin-top: 10px;
+    border-bottom: 2px solid #CECCCE;
+}
+
+.signup a {
+    width: 150px;
+    height: 30px;
+    display: block;
+    text-align: center;
+    margin: 30px auto;
+    color:#7F7D7E;
+}
+
+/** 아이디, 비밀번호 찾기 **/
+#find_info {
+    background-color: #ECE2DB;
+    color: #222222;
+    padding: 40px 15px 0 15px;
+    position: relative;
+    min-height: 130px;
+}
+
+#find_info p {
+    margin-bottom: 30px;
+}
+
+#find_info button {
+    float: left;
+    width: calc(50% - 2.5px);
+    height: 40px;
+    background-color: #eee;
+    border: 0.5px solid #CECCCE;
+    outline: none;
+}
+
+#find_pw {
+    margin-left: 5px;
+}

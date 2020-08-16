@@ -1,0 +1,334 @@
+@charset "utf-8";
+
+* {
+  box-sizing: border-box;
+}
+
+  a{
+    width: 25%;
+    margin-left: 15px;
+    margin-right: 15px;
+
+  }
+
+  a { text-decoration: none; color: black; }
+  a:visited { text-decoration: none; }
+  a:hover { text-decoration: none; }
+  a:focus { text-decoration: none; }
+  a:hover, a:active { color: red; font-weight: bolder; }
+
+  .search {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    float: right;
+  }
+
+#header {
+  width: 100%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.head {
+  text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.slider {
+  text-align: center;
+  overflow: hidden;
+
+}
+.slider2 {
+    padding-bottom: 30px;
+}
+
+.slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+
+  /*
+  scroll-snap-points-x: repeat(300px);
+  scroll-snap-type: mandatory;
+  */
+}
+.slides::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.slides::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+.slides::-webkit-scrollbar-track {
+  background: transparent;
+}
+.slides > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 100%;
+  height: 400px;
+  margin-right: 50px;
+  border-radius: 10px;
+  background: rgb(251,249,237);
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  display: flex;
+}
+
+
+
+.slider > a {
+
+  width: 1.5rem;
+  height: 1.5rem;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 0 0.5rem 0;
+  position: relative;
+}
+.slider > a:active {
+  top: 1px;
+}
+.slider > a:focus {
+  background: #000;
+}
+
+/* Don't need button navigation */
+@supports (scroll-snap-type) {
+  .slider > a {
+    display: none;
+  }
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  display: flex;
+  /*align-items: center;*/
+  justify-content: center;
+  /*background: linear-gradient(to bottom, #74ABE2, #5563DE);*/
+  background: rgb(230,232,229);
+
+}
+
+ img {
+    width: 40px;
+    height: 50px;
+ }
+
+ .name{
+  text-align: center;
+  width: 100%;
+ }
+/* 쿠폰 이미지*/
+ .coupon_image {
+    background-color: gray;
+    background: url(../image/coupon.png);
+        background-repeat: no-repeat;
+    text-align: center;
+    background-size: 100% 100%;
+    width: 100%;
+    padding: 30px 0px 0px 0px;
+    margin-top: 20px;
+    height: 100px;
+}
+
+.coupon_p {
+  font-size: 13px;
+  width: 100%;
+
+}
+
+.coupon_title{
+  font-size: 13px;
+  width: 100%;
+
+}
+
+.coupon_day {
+  font-size: 13px;
+  width: 100%;
+
+}
+
+.coupon_num {
+  font-size: 13px;
+  width: 100%;
+      text-align: center;
+    line-height: 25px;
+    border-radius: 12px;
+    border: 1px solid #e46764;
+    color: #e46764;
+    font-size: 13px;
+    width: 95%;
+
+}
+
+.story {
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 180px;
+}
+
+#slide-2 {
+  width: 100%;
+}
+
+#slide-22 {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/* 슬라이드 3*/
+
+.WWish {
+  width: 100%;
+}
+
+.wish {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 15px;
+
+}
+
+/* 사진 이미지 */
+.product img {
+
+    width: 81px;
+    height: 135px;
+    opacity: 1;
+    z-index: 9;
+
+}
+
+.wish_imag {
+  width: 103%;
+}
+
+li {
+    display: block;
+    font-size: 16px;
+    color: #222;
+     display: block;
+    float: left;
+    width: calc(50% - 20px);
+    text-align: center;
+    height: 15%;
+    font-size: 13px;
+}
+
+.wkd {
+  margin-left: 30px;
+  width: 100%;
+}
+
+.pt {
+  font-size: 13px;
+}
+
+.box {
+  border-right:  #d5d5d5 dotted 0.8px;
+  border-bottom: #d5d5d5 dotted 0.8px;
+  margin-top: 30px;
+  margin-left: 22px;
+
+}
+
+.gift {
+  border-left:  #d5d5d5 dotted 0.8px;
+  border-bottom: #d5d5d5 dotted 0.8px;
+  margin-top: 30px;
+
+}
+
+.refund {
+  border-right:  #d5d5d5 dotted 0.8px;
+  margin-left: 22px;
+
+}
+
+.heart {
+  border-left:  #d5d5d5 dotted 0.8px;
+}
+
+.order_s {
+    text-align: center;
+    line-height: 25px;
+    border-radius: 12px;
+    border: 1px solid #e46764;
+    color: #e46764;
+    font-size: 14px;
+    margin-top: 10px;
+
+}
+
+.serv{
+    text-align: center;
+    line-height: 25px;
+    border-radius: 12px;
+    border: 1px solid #e46764;
+    color: #e46764;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.Q{
+    text-align: center;
+    line-height: 25px;
+    border-radius: 12px;
+    border: 1px solid #e46764;
+    color: #e46764;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#browsers2{
+    background-color: rgb(230,232,229);
+    border: 1px solid rgb(230,232,229);
+    border-radius: 10px;
+    display: inline-block;
+    font: inherit;
+    line-height: 1.5em;
+    padding: 0.5em 3.5em 0.5em 1em;
+    width: auto;
+    margin-left: 95px;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+-webkit-appearance: none;
+-moz-appearance: none;
+
+
+background-image:
+linear-gradient(45deg, transparent 50%, gray 50%),
+linear-gradient(135deg, gray 50%, transparent 50%),
+radial-gradient(#ddd 70%, transparent 72%);
+background-position:
+calc(100% - 20px) calc(1em + 2px),
+calc(100% - 15px) calc(1em + 2px),
+calc(100% - .5em) .5em;
+background-size:
+5px 5px,
+5px 5px,
+1.5em 1.5em;
+background-repeat: no-repeat;
+}
+

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/MyHeart
+.css">
+    <link rel="stylesheet" type="text/css" href="css/header
+.css">
+    <link rel="stylesheet" type="text/css" href="css/bottom_bar
+.css">
+<head>
+    <meta charset="UTF-8">
+    <title>MyHeart</title>
+</head>
+
+<body>
+    <!-- 헤더 -->
+    <div id="header">
+        <ul>
+            <li class="back"><a href="#"><img src="image/back.png"></a></li>
+            <li class="search"><a href="#"><img src="image/search.png"></a></li>
+            <div class="searchbox">
+                <input placeholder="search..." type="text" />
+                <a href=""><img src="image/search.png"></a>
+            </div>
+            <li class="title"><h1>마이하트</h1></li>
+            <li class="cart"><a href="ShoppingCart.html"><img src="image/shopping_cart.png"></a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+      <div class="page-header">
+         <ul>
+               <li>ㆍ위시리스트에는 상품이 최대 50개까지 저장됩니다.</li>
+               <li>ㆍ마이하트에 담은 상품 중 판매종료가 된 상품은<br/>&nbsp&nbsp  자동삭제됩니다.</li>
+           </ul>
+       </div>
+       <div class ="two_option clear">
+          <div class="del">선택상품삭제</div>
+          <div class="select">
+             <select>
+                <option>전체</option>
+                <option>베스트</option>
+                <option>신상품</option>
+                <option>추천상품</option>
+                <option>탑</option>
+                <option>드레스</option>
+                <option>팬츠</option>
+                <option>아우터</option>
+                <option>잡화</option>
+
+             </select>
+          </div>
+       </div>
+       <div class="list">
+          <ul class="clear">
+             <li>
+                <div class="img_box"><img src="image/main2.jpg">
+       			 	<div class="box_list">
+       			 		<input type='checkbox' class='del_box' id="cb1" value="삭제">
+                        <label id="cb2" for="cb1"></label>
+       			 	</div>
+       			 </div>
+                <p>상품명</p>
+                <p>가격</p>
+             </li>
+             <li>
+                <div class="img_box"><img src="image/main2.jpg">
+                    <div class="box_list">
+                        <input type='checkbox' class='del_box' id="cb3" value="삭제">
+                        <label id="cb4" for="cb3"></label>
+                    </div>
+                </div>
+                <p>상품명</p>
+                <p>가격</p>
+             </li>
+          </ul>
+       </div>
+       <ul class="paging">
+          <li>&lt;</li>
+          <li>1</li>
+          <li>&gt;</li>
+       </ul>
+       <input type="button" name="" class="btn_basket" value="장바구니담기">
+    </div>
+
+    <div id="modal">
+      <div id="modal_bg"></div>
+      <div id="options">
+        <div class="wrapper">
+          <div class="btn_close">X</div>
+          <div class="box clear">
+            <div class="img_box"><img src="image/main2.jpg"></div>
+            <div class="cont_box">
+              <ul>
+                <li>Fourm The Store</li>
+                <li>[Palette]</li>
+                <li>138,000</li>
+              </ul>
+            </div>
+          </div>
+          <div class="btn_box">
+            <input type="button" name="ok" value="선택완료">
+          </div>
+        </div>
+      </div>
+      <div id="go_basket">
+        <p class="btn_close">X</p>
+        <p>장바구니로 이동하시겠습니까?</p>
+        <input type="button" name="" value="확인">
+      </div>
+    </div>
+<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+        $(function() {
+        $(".search").click(function() {
+                    $(".title").toggle();
+                    $(".searchbox").toggle();
+                });
+          });
+    </script>
+
+<script type="text/javascript">
+   $(".btn_basket").click(function(){
+    $("#modal").addClass("show");
+  })
+
+  $("#modal #options .btn_close").click(function(){
+    $("#modal").removeClass("show");
+  });
+  // $("#modal_bg").click(function(){
+  //   $("#modal").removeClass("show");
+  // });
+
+  $("#modal #options input").click(function(){
+    $("#modal #go_basket").show();
+    $("#modal #options .wrapper").css({"z-index":"-1"});
+  })
+
+  $("#modal #go_basket .btn_close").click(function(){
+      $("#modal #go_basket").hide();
+  });
+  $("#modal #go_basket .btn_close").click(function(){
+     $("#modal #go_basket").hide();
+     $("#modal #options .wrapper").css({"z-index":"1"});
+     $("#modal").removeClass("show");
+  });
+
+  $("#modal #modal_bg").click(function(){
+     $("#modal #go_basket").hide();
+     $("#modal #options .wrapper").css({"z-index":"1"});
+     $("#modal").removeClass("show");
+  });
+</script><!--
+$("#modal #go_basket .btn_close").click(function(){
+     $("#modal #go_basket").hide();
+     $("#modal #options .wrapper").css({"z-index":"1"});
+     $("#modal").removeClass("show");
+  }); -->
+<!--   <script language="javascript">
+  function showPopup() { window.open("MyHeartPopup.html", "옵션선택", "width=400, height=300, left=100, top=50"); }
+  </script> -->
+<div id="bottom_bar">
+        <ul>
+            <li><a href="#"><img src="image/menu.png"></a></li>
+            <li><a href="Login.html"><img src="image/lock.png"></a></li>
+            <li><a href="Main.html"><img src="image/home.png"></a></li>
+            <li><a href="MyHeart.html"><img src="image/heart.png"></a></li>
+            <li><a href="ready.html"><img src="image/person.png"></a></li>
+        </ul>
+    </div>
+
+    <!-- 카테고리 바 -->
+    <div id="category_bar">
+        <ul>
+            <li><a href="Best.html">BEST</a></li>
+            <li><a href="New.html">NEW</a></li>
+            <li><a href="Recommend.html">RECOMMEND</a></li>
+            <li><a href="Top.html">TOP</a></li>
+            <li><a href="Dress.html">DRESS</a></li>
+            <li><a href="Pants.html">PANTS</a></li>
+            <li><a href="Outer.html">OUTER</a></li>
+            <li><a href="Acc.html">ACCESSORY</a></li>
+            <li><a href="Announcement.html">NOTICE</a></li>
+            <li><a href="QnA.html">Q&A</a></li>
+        </ul>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("#bottom_bar li:first-child").click(function(e) {
+                e.preventDefault();
+                $("#category_bar").slideToggle(100);
+            });
+        });
+    </script>
+
+
+</body>
+</html>
