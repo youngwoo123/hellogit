@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -22,11 +23,12 @@
                 <input placeholder="search..." type="text" />
                 <a href=""><img src="image/search.png"></a>
             </div>
-            <li class="title"><h1>accessory</h1></li>
+            <li class="title">
+                <h1>accessory</h1>
+            </li>
             <li class="cart"><a href="ShoppingCart.html"><img src="image/shopping_cart.png"></a></li>
         </ul>
     </div>
-
     <div id="content">
         <div id="menu_bar">
             <ul>
@@ -48,12 +50,10 @@
         </div>
         <div id="product" class="clear">
             <ul id="grid">
-
             </ul>
         </div>
         <button id="btn">more +</button>
     </div>
-
     <!-- footer -->
     <div id="footer">
         <ul id="first_row">
@@ -88,12 +88,10 @@
             </li>
         </ul>
     </div>
-
     <!-- top 버튼 -->
     <div id="side">
         <a href="#" class="top"><img src="image/arrow_up.png"></a>
     </div>
-
     <!-- 하단 메뉴바 -->
     <div id="bottom_bar">
         <ul>
@@ -104,7 +102,6 @@
             <li><a href="Order_List.html"><img src="image/person.png"></a></li>
         </ul>
     </div>
-
     <!-- 카테고리 바 -->
     <div id="category_bar">
         <ul>
@@ -120,7 +117,6 @@
             <li><a href="QnA.html">Q&A</a></li>
         </ul>
     </div>
-
     <script type="text/x-handlebars-template" id="list-item-tmpl">
         {{#item}}
         <li>
@@ -137,40 +133,42 @@
         </li>
         {{/item}}
     </script>
-
     <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="plugins/handlebars/handlebars-v4.0.11.js"></script>
     <script src="js/item.js"></script>
     <script type="text/javascript">
-        function add_item() {
-            var template = Handlebars.compile($("#list-item-tmpl").html());
-            var html = template(data)
-            $("#grid").append(html);
-        }
+    function add_item() {
+        var template = Handlebars.compile($("#list-item-tmpl").html());
+        var html = template(data)
+        $("#grid").append(html);
+    }
 
-        $(function() {
-            $(".search").click(function() {
-                    $(".title").toggle();
-                    $(".searchbox").toggle();
-            });
-
-            $("#bottom_bar li:first-child").click(function(e) {
-                e.preventDefault();
-                $("#category_bar").slideToggle(100);
-            });
-
-            $(".top").click(function() {
-                $('html').animate({ scrollTop: 0 }, 400);
-            });
-
-            add_item();
-
-            $("#btn").click(function() {
-                var scroll = document.documentElement.scrollTop;
-                add_item();
-                window.scrollTo(0, scroll);
-            });
+    $(function() {
+        $(".search").click(function() {
+            $(".title").toggle();
+            $(".searchbox").toggle();
         });
+
+        $("#bottom_bar li:first-child").click(function(e) {
+            e.preventDefault();
+            $("#category_bar").slideToggle(100);
+        });
+
+        $(".top").click(function() {
+            $('html').animate({ scrollTop: 0 }, 400);
+        });
+
+        add_item();
+
+        $("#btn").click(function() {
+            var scroll = document.documentElement.scrollTop;
+            add_item();
+            window.scrollTo(0, scroll);
+        });
+    });
+
+
     </script>
 </body>
+
 </html>
